@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport"
+               content="width=device-width, initial-scale=1.0" />
+          <title>@earthtoyash</title>
+          <style>
+          body {
+               padding: 25px;
+               background-color: white;
+               color: black;
+               font-size: 25px;
+          }
+          .dark-mode {
+               background-color: black;
+               color: white;
+          }
+          .light-mode {
+               background-color: white;
+               color: black;
+          }
+          </style>
+     </head>
+<body>
+     <background></background>
      <title>@earthtoyash</title>
      <link rel="icon" href="https://raw.githubusercontent.com/earthtoyash/earthtoyash.github.io/main/me.jpg">
      <meta charset="UTF-8">
      <meta name="home" content="Just some stuff!">
-</head>
+
 
      <div style="font-family:'Old',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;border-bottom:thin solid #000000;color:rgba(36, 36, 36, 0.87);line-height:25px;padding-bottom:24px;text-align:center;word-break:break-word"><div style="font-size:40px"></div> 
           <img src="https://raw.githubusercontent.com/earthtoyash/earthtoyash.github.io/main/me.jpg" alt="It's Me!" height="102" width="102"> 
@@ -16,29 +40,63 @@
           <script src="https://tryhackme.com/badge/1257754"></script>     
      </div>
      
-     <p>I am @earthtoyash, I love cybersecurity and some other subjects too.</p>
-     <p> You can check out my social media from below. Let’s learn cyber together!</p>     
-     <ul>
-     <li><a href="https://twitter.com/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#1DA1F2;border-radius:10px;min-width:100px">Twitter</a></li>
-     </ul>
-     <ul>
-     <li><a href="https://www.instagram.com/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#8a3ab9;border-radius:10px;min-width:100px">Instagram</a></li>
-     </ul>
-     <ul>
-     <li><a href="https://www.linkedin.com/in/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#0A66C2;border-radius:10px;min-width:100px">LinkedIn</a></li>
-     </ul>
-     <ul>
-     <li><a href="https://github.com/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#171515;border-radius:10px;min-width:100px">GitHub</a></li>
-     </ul>
-     <ul>
-     <li><a href="https://www.reddit.com/user/earthtomars1" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#ff4500;border-radius:10px;min-width:100px">Reddit</a></li>
-     </ul>
-     <ul>
-     <li><a href="https://tryhackme.com/p/Scott.Lang" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#23243a;border-radius:10px;min-width:100px">TryHackMe</a></li>
-     </ul>
-     <ul>
-     <li><a href="https://www.youtube.com/channel/UCRMLKN6BCqcr1DQO6pC-g2g" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#c4302b;border-radius:10px;min-width:100px">Youtube</a></li>
-     </ul>
-     <a href="mailto:earthtoyash@proton.me" target="_blank" >My Email!</a>
+     <div>
+          <h3 id="DarkModetext">Dark Mode is OFF</h3>
+	     <button onclick="darkMode()">Darkmode</button>
+	     <button onclick="lightMode()">LightMode</button>
+	     <script>
+	     function darkMode() {
+	     	var element = document.body;
+	     	var content = document.getElementById("DarkModetext");
+	     	element.className = "dark-mode";
+	     	content.innerText = "Dark Mode is ON";
+	     }
+	     function lightMode() {
+	     	var element = document.body;
+	     	var content = document.getElementById("DarkModetext");
+	     	element.className = "light-mode";
+	     	content.innerText = "Dark Mode is OFF";
+	     }
+	     </script>
+     </div>
+
+
+     <div>
+          <p>I am @earthtoyash, I love cybersecurity and some other subjects too.</p>
+          <p>You can check out my social media from below. Let’s learn cyber together!</p>     
+          <ul>
+               <li><a href="https://twitter.com/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#1DA1F2;border-radius:10px;min-width:100px">Twitter</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://www.instagram.com/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#8a3ab9;border-radius:10px;min-width:100px">Instagram</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://www.linkedin.com/in/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#0A66C2;border-radius:10px;min-width:100px">LinkedIn</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://github.com/earthtoyash/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#171515;border-radius:10px;min-width:100px">GitHub</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://www.reddit.com/user/earthtomars1" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#ff4500;border-radius:10px;min-width:100px">Reddit</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://tryhackme.com/p/Scott.Lang" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#23243a;border-radius:10px;min-width:100px">TryHackMe</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://www.youtube.com/channel/UCRMLKN6BCqcr1DQO6pC-g2g" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#c4302b;border-radius:10px;min-width:100px">Youtube</a></li>
+          </ul>
+
+          <ul>
+               <li><a href="https://earthtoyash.medium.com/" target="_blank" style="font-family:'Fira Code',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:25px;color:#ffffff;font-weight:2000;text-decoration:none;font-size:18px;display:inline-block;padding:10px 24px;background-color:#121111;border-radius:10px;min-width:100px">Medium</a></li>
+          </ul>
+
+          <a href="mailto:earthtoyash@proton.me" target="_blank" >My Email!</a>
+     </div>
 </body>
 </html>
