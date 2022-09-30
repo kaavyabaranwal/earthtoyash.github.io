@@ -27,18 +27,3 @@ body {
 .fa:hover {
     opacity: 0.9;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.user-info {
-    font-family: 'Old', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-    border-bottom: thin solid #000000;
-    color: rgba(255, 0, 0, 0.87);
-    line-height: 25px;
-    padding-bottom: 24px;
-    text-align: center;
-    word-break: break-word;
-}
