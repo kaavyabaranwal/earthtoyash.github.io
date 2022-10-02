@@ -11,7 +11,7 @@
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(img/techno_background_with_connecting_grid_2201.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .intro {
