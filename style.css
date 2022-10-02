@@ -64,8 +64,9 @@ body {
 }
 
 .centre {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     width: 75%;
 }
