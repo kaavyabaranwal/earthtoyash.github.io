@@ -126,3 +126,19 @@ section {
     text-align: center;
     font-size: 25px;
 }
+
+/* btn-replaced section */
+
+.fa{
+    color: white;
+    margin: 10px 15px 0 15px;
+}
+
+.fa:hover{
+    color: #abe930;
+    transition: 0.1ms ease;
+}
+
+.thmbdg{
+    margin-top: 30px;
+}
